@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tei_cp.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+
+   <!-- dates standard ISO 8601  avec @when seulement -->
+   <!-- standard ISO ISO 639-1 for languages -->
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">
+               <title type="littWork">Considérations sur les principaux événemens de la révolution
+                  françoise</title> de Germaine de Staël&#xA0;: un laboratoire éditorial</title>
+            <title type="sub">Manuscrit</title>
+            <author>
+               <persName ref="#stael">Germaine de Staël</persName>
+            </author>
+            <editor>
+               <persName xml:id="tesserS" ref="https://isni.org/isni/0000000353074065">
+                  <surname>Tesser</surname>
+                  <forename>Stefania</forename>
+               </persName>
+            </editor>
+         </titleStmt>
+         <extent>
+            <measure unit="KB" n="20">20 KB</measure>
+            <!-- modifier la taille à la fin du travail -->
+         </extent>
+         <publicationStmt>
+            <authority>Università Ca' Foscari Venezia </authority>
+            <address>
+               <settlement ref="https://www.geonames.org/3164603/venice.html">Venezia</settlement>
+            </address>
+
+            <date when="2023">2023</date>
+            <availability status="restricted">
+               <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
+                  BY-NC-4.0 FR</licence>
+
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement ref="#paris"> Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des Manuscrits</repository>
+                  <idno type="shelfmark">NAF 14606,14607,14608</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <author>
+                        <persName ref="#stael">Germaine de Staël</persName>
+                     </author>
+                     <title type="littWork" ref="#considerationsSg">Considérations sur
+                        les principaux événemens de la révolution françoise</title>
+                     <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
+                        correspondance</note>
+                  </msItemStruct>
+                  <msItem n="vol_1">
+                     <p>Premier volume</p>
+                  </msItem>
+                  <msItem n="vol_2">
+                     <p>Deuxième volume</p>
+                  </msItem>
+                  <msItem n="vol_3">
+                     <p>Troisième volume</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc>
+                        <support><material>Papier </material>vergé, filigrané et plié in-folio.
+                           Emploi rare du vélin</support>
+                        <extent>
+                           <locus n="vol_1">Premier volume&#xA0;: 315 f.</locus>
+                           <locus n="vol_2">Deuxième volume&#xA0;: 326 f.</locus>
+                           <locus n="vol_3">Troisième volume&#xA0;: 389 f.</locus>
+                        </extent>
+                        <foliation>Foliotation manuscrite dans l'angle supérieur gauche de chaque
+                           page. Foliotation au recto de chaque feuillet dans l'angle supérieur
+                           droit par la Bibliothèque nationale de France</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">Les copistes écrivent dans la colonne de droite et au
+                           recto et verso de chaque feuillet</layout>
+
+                     </layoutDesc>
+                  </objectDesc>
+                  <!-- donner pour chaque écriture non indentifiée des éléments caractéristiques pour distinguer les unes des autres-->
+                  <handDesc>
+                     <handNote>Copiste A: <persName ref="#randallF"
+                           >Fanny Randall</persName></handNote>
+                     <handNote xml:id="cB" medium="ink">Copiste B&#xA0;: non identifié</handNote>
+                     <handNote  medium="ink">Copiste C&#xA0;: <persName
+                           ref="#staelA">Albertine de Staël</persName>
+                        <note>Elle est autrice également de la lettre aux ff. 1r-2v</note>
+                     </handNote>
+                     <handNote xml:id="cD" medium="ink">Copiste D&#xA0;: non identifié. </handNote>
+                     <handNote xml:id="cE" medium="ink">Copiste E&#xA0;: non identifié</handNote>
+                     <handNote xml:id="cF" medium="ink">Copiste F&#xA0;: non identifié</handNote>
+                     <handNote medium="ink">Copiste G&#xA0;: <persName
+                           ref="#staelAu">Auguste de Staël</persName>
+                        <note>Il est également auteur d'interventions posthumes dans le
+                           manuscrit</note>
+                     </handNote>
+                     <handNote xml:id="cH" medium="ink">Copiste H&#xA0;: non identifié</handNote>
+                     <handNote xml:id="cI" medium="ink">Copiste I&#xA0;: non identifié</handNote>
+                     <handNote medium="ink">Variantes d'auteur&#xA0;: <persName
+                           ref="#stael"/>Germaine de Staël </handNote>
+                     <handNote medium="ink">Intervention allographe B&#xA0;:
+                           <persName ref="#schlegelW">Wilhelm Schlegel
+                        </persName></handNote>
+                     <handNote xml:id="allC" medium="pencil">Intervention allographe C&#xA0;: non
+                        identifié </handNote>
+                     <handNote xml:id="allD" medium="ink">Auteur de feuillets adjoints&#xA0;: non
+                        identifié. <note>Écriture qui
+                           <!-- ajouter pointeur vers les ff. du volume III --> figure <locus>aux
+                              ff. 219r°-220v° du troisième volume</locus>. Ce sont des feuillets
+                           d'un document contemporain à la rédaction de l'ouvrage qui ont été reliés
+                           au manuscrit. L'auteur des feuillets suggère des corrections du texte de
+                           Germaine de Staël</note>
+                        <!-- Préciser la note et l'ajouter à l'apparat critique -->
+                     </handNote>
+                     <handNote xml:id="unknown">Non identifié. Auteur de passages barrés sans autres
+                        éléments permettant l'identification</handNote>
+
+                  </handDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Reliure en <material>veau</material></p>
+                        <decoNote type="plats">Décoration à plaques avec au centre un motif "à la
+                           cathédrale" </decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <p>Le manuscrit a été donné par <persName ref="#staelA">Albertine de
+                        Staël</persName> au peintre <persName ref="#gerardF"> François
+                        Gérard</persName> après 1819 pour le remercier des portraits de sa <persName
+                        ref="#stael">mère</persName> et son frère <persName
+                        ref="#staelAu"> Auguste </persName>. Il provenait de <persName
+                        ref="#lyonJ">Jacques Lyon</persName> quand il a été acheté en
+                     1963 par la Bibliothèque nationale de France.</p>
+                  <p/>
+               </history>
+            </msDesc>
+            
+            
+            <!-- ########## Liste Personnes ########## -->
+            <listPerson>
+               <head>Lista Persone</head>
+               <person>
+                  <persName xml:id="broglieV" ref="https://isni.org/isni/0000000122834231">
+                     <surname>Broglie</surname>
+                     <forename> Victor </forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1785">1785</date>
+                  </birth>
+                  <death>
+                     <date when="1870">1870</date>
+                  </death>
+               </person>
+               
+ 
+               <person>
+                  <persName xml:id="gerardF" ref="https://isni.org/isni/0000000107807200">
+                     <surname>Gérard</surname>
+                     <forename>François</forename>
+                     <roleName>Baron</roleName>
+                  </persName>
+                  <birth>
+                     <date when="1770">1770</date>
+                  </birth>
+                  <death>
+                     <date when="1837">1837</date>
+                  </death>
+                  <occupation>Peintre</occupation>
+               </person>
+               
+               <person>
+                  <persName xml:id="lyonJ" ref="https://isni.org/isni/0000000048630571">
+                     <surname>Lion</surname>
+                     <forename>Jacques</forename>
+                  </persName>
+                  <birth>
+                     <date when="1888">1888</date>
+                  </birth>
+                  <death>
+                     <date when="1944">1944</date>
+                  </death>
+               </person>
+               
+               <person>
+                  
+                  <persName xml:id="neckerJ" ref="https://isni.org/isni/000000012320977X">
+                     <surname>Necker</surname>
+                     <forename>Jacques</forename>
+                  </persName>
+                  <birth>
+                     <date when="1732">1732</date>
+                  </birth>
+                  <death>
+                     <date when="1804">1804</date>
+                  </death>
+               </person>
+               
+               
+               <person>
+                  
+                  <persName xml:id="neckerS" ref="https://isni.org/isni/0000000114785572">
+                     <surname type="married">Necker</surname>
+                     <forename>Suzanne</forename>
+                     <surname type="birth">Curchod</surname>
+                  </persName>
+                  <birth>
+                     <date when="1737">1737</date>
+                  </birth>
+                  <death>
+                     <date when="1794">1794</date>
+                  </death>
+               </person>
+       
+               <person>
+                  <persName xml:id="randallF" ref="http://viaf.org/viaf/259797369">
+                     <surname>Randall</surname>
+                     <forename>Frances</forename>
+                     <addName>Fanny</addName>
+                  </persName>
+                  <birth>
+                     <date when="1777">1777</date>
+                  </birth>
+                  <death>
+                     <date when="1833">1833</date>
+                  </death>
+                  <occupation>Gouvernante d'Albertine de Staël</occupation>
+               </person>
+         
+               
+               <person>
+                  <persName xml:id="schlegelW" ref="https://isni.org/isni/0000000110276033">
+                     <surname>Schlegel</surname>
+                     <forename>August Wilhelm</forename>
+                  </persName>
+                  <birth>
+                     <date when="1767">1767</date>
+                  </birth>
+                  <death>
+                     <date when="1845">1845</date>
+                  </death>
+               </person>
+               
+          <person>
+                  <persName xml:id="staelA" ref="https://isni.org/isni/0000000108020725">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Albertine</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1797">1797</date>
+                  </birth>
+                  <death>
+                     <date when="1838">1838</date>
+                  </death>
+               </person>
+            
+               <person>
+                  <persName xml:id="staelAu" ref="https://isni.org/isni/0000000121235202">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Auguste-Louis</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1789">1789</date>
+                  </birth>
+                  <death>
+                     <date when="1827">1827</date>
+                  </death>
+               </person>
+               
+             <person>
+                  <persName xml:id="stael" ref="https://isni.org/isni/0000000122591946">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Germaine</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1766">1766</date>
+                  </birth>
+                  <death>
+                     <date when="1817">1817</date>
+                  </death>
+               </person>
+ 
+            </listPerson>
+            
+            
+            <!-- ########## Liste Lieux ########## -->
+            
+            <listPlace>
+               
+               
+               <place xml:id="lyon">
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
+                     >France</country>
+                  <settlement ref="https://www.geonames.org/2996944/lyon.html"> Lyon</settlement>
+               </place>
+               
+               <place xml:id="paris">
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
+                     >France</country>
+                  <settlement ref="https://www.geonames.org/2988507/paris.html"> Paris</settlement>
+               </place>
+               
+            </listPlace>
+            
+            
+            <!-- ########## Liste Ouvrages ########## -->     
+            
+            
+   <list>
+      <item xml:id="considerationsSg">
+             
+           <title  type="littWork" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q107179831" >
+               Considérations sur les
+               principaux événements de la Révolution française</title>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+      </item>
+      <item xml:id="corinneMisene">
+                  <title  type="painting" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap
+                     Misène</title>
+                  <name type="author" ref="#gerardF">François Gérard</name>
+      </item>     
+               <item xml:id="dixAnneesSg">
+                  <title type="littWork" rend="italic">Dix années d'exil</title>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </item>
+               
+               
+               <item xml:id="oeuvresCompletesNj">
+                  <title type="littWork" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q116868867">Oeuvres complètes</title>
+                  <name type="author" ref="#stael">Jacques Necker</name>
+               </item>
+               <item xml:id="mannequinSg">
+                  <title type="littWork" rend="italic">Mannequin</title>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </item>
+               
+               
+               <item xml:id="oeuvresCompletesSg">
+                  <title type="littWork" rend="italic">Oeuvres complètes</title>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </item>
+        
+   </list>
+            
+            
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="#broglieV">Victor de Broglie </persName>
+                     <persName ref="#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël&#xA0;; publ. par
+                     M. le duc de Broglie et M. le baron de Staël</title>
+                  <imprint>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                     <publisher>Delaunay</publisher>
+                     <date when="1818">1818</date>
+                  </imprint>
+                  <extent>3 v.&#xA0;; in-8</extent>
+               </monogr>
+               <ref type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ref>
+            </biblStruct>
+            <biblStruct>
+               <!-- données sur la version numérique de la première édition -->
+               <monogr>
+                  <author>
+                     <persName ref="#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="#broglieV">Victor de Broglie </persName>
+                     <persName ref="#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
+                     duc de Broglie et M. le baron de Staël.</title>
+                  <idno type="shelfmark" n="NUMM-3056628"> Cote: NUMM-3056628</idno>
+                  <ref type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
+
+                  <availability status="restricted">
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Utilisation non commerciale libre</licence>
+                  </availability>
+                  <imprint>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                     <publisher>Bibliothèque nationale de France</publisher>
+                     <date when="2019-07-08">8 juillet 2019</date>
+                     <note>Version numérisée de la première édition</note>
+                  </imprint>
+                  <biblScope unit="volume" n="1">Tome premier</biblScope>
+               </monogr>
+            </biblStruct>
+
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Édition numérique du dernier manuscrit des <title type="littWork"
+                  >Considérations</title> et de la première édition posthume. Le projet vise à
+               restituer toutes les écritures qui figurent dans le manuscrit et à fournir des moyens
+               pour comparer celui-ci avec le texte de la première édition </p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p>Correction des fautes du copiste signalées dans les notes éditoriales</p>
+            </correction>
+            <normalization>
+               <p>Graphie du manuscrit original respectée sauf pour les accents, la ponctuation
+                  forte et les majuscules dans les cas d'ambiguïté sémantique. L'intervention est
+                  toujours signalée. Emploi uniformisé du soulignement pour les titres d'ouvrages et
+                  des bateaux. Foliotation correspondant à celle de la BnF. </p>
+            </normalization>
+         </editorialDecl>
+         <p xml:id="variantEncoding">location="internal" method="parallel segmentation (?)"</p>
+
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <keywords scheme="https://rameau.bnf.fr/">
+               <term>Révolution française</term>
+               <term>Napoléon I<hi rend="superscript">er</hi></term>
+            </keywords>
+         </textClass>
+
+
+      </profileDesc>
+   </teiHeader>
+   
+      
+    
+   <text>
+      
+      <group>
+         <!-- ############### Première èdition ################ -->
+         
+         
+         <text xml:id="firstEdition" n="Considérations_sur_les_principaux_événemens_de_la_Révolution_françoise">
+            
+            <front>
+               <pb xml:id="v1pI" n="0" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f13/full/1020,/0/native.jpg"/>
+               <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
+               <titlePage>
+                  <note resp="#tesserS"> Les premiers feuillets du manuscrit sont constitués par la lettre
+                     d'<persName ref="#staelA">Albertine de Staël</persName> au peintre <persName
+                        ref="#gerardF">Gérard</persName>. En revanche, le titre de ce frontispice
+                     ne figure pas dans le manuscrit. </note>
+                  <milestone unit="section" type="collation" subtype="add" xml:id="frontispiceEd"
+                     corresp="#frontispiceMs"/>
+                  <docTitle rend="center">
+                     <lb/>
+                     <lb/>
+                     
+                     
+                     <titlePart type="main"> CONSIDÉRATIONS <lb/> SUR LES PRINCIPAUX ÉVÉNEMENS <lb/> DE
+                        <lb/> LA RÉVOLUTION FRANÇOISE, </titlePart>
+                  </docTitle>
+                  <lb/>
+                  <lb/>
+                  <byline rend="center"> OUVRAGE POSTHUME<lb/> DE <docAuthor> MADAME LA BARONNE DE
+                     STAËL</docAuthor>, <lb/>PUBLIÉ <lb/> PAR M. LE DUC DE BROGLIE ET M. LE BARON DE
+                     STAËL. </byline>
+                  <lb/>
+                  <lb/>
+                  <epigraph rend="right">
+                     <cit>
+                        <quote> Les révolutions qui arrivent dans les grands états <lb/>ne sont point un
+                           effet du hasard ni du caprice <lb/>des peuples.</quote>
+                        <bibl> MÉM. DE SULLY, T. I, p. 133. </bibl>
+                     </cit>
+                  </epigraph>
+                  <lb/>
+                  <lb/>
+                  <titlePart type="sub" rend="center">TOME PREMIER. </titlePart>
+                  
+                  <fw type="frise" place="below">Frise</fw>
+                  <!-- vérifier - à transformer avec éléments dans <facsimile-->
+                  
+                  <fw type="stamp" place="below">Tampon "Bibliothèque Royale"</fw>
+                  
+                  <lb/>
+                  <lb/>
+                  <lb/>
+                  <lb/>
+                  <docImprint rend="center">
+                     <settlement>PARIS,<lb/></settlement>
+                     <publisher>DELAUNAY, LIBRAIRE, PALAIS-ROYAL, GALERIE DE BOIS, N. 243 ; </publisher>
+                     <lb/>
+                     <publisher>BOSSANGE ET MASSON, LIBRAIRES, RUE DE TOURNON, N. 6.</publisher>
+                     <lb/><date>1818.</date>
+                  </docImprint>
+               </titlePage>
+               
+               <pb xml:id="v1pII" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f14/full/1022,/0/native.jpg"/>
+               
+               <div xml:id="v1ed" type="volume" n="1">
+                  <pb xml:id="v1pV" n="v" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f15/full/1026,/0/native.jpg"/>
+                  <div xml:id="prefaceEd" type="prefaceEd">
+                     <note resp="#tesserS">L'&#8810;&#xA0;Avis des éditeurs&#xA0;&#8811;, qui a été ajouté
+                        à la première édition, représente une des rares sources sur la manière de
+                        travailler de <persName ref="#stael">Staël</persName> et sur l'état du dernier
+                        manuscrit des <persName ref="#considerationsSg"><title type="littWork"
+                           rend="italic">Considérations</title></persName>. </note>
+                     <milestone unit="section" type="collation" subtype="add" corresp="#PrefaceEdMs"
+                        xml:id="PrefaceEdEd1"/>
+                     <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
+                     <lb/>
+                     <lb/>
+                     
+                     <p>
+                        <seg type="collation" subtype="add" xml:id="PrefaceEdEd">
+                           <hi rend="bold"> E</hi><hi rend="small-caps">N</hi> remplissant la tâche que
+                           <persName ref="#stael"> madame de Staël</persName> a daigné nous confier,
+                           nous devons avant tout faire connoître dans quel état nous avons trouvé le
+                           manuscrit remis à nos soins. <lb/><persName ref="#stael"> Madame de
+                              Staël</persName> s’étoit tracé, pour toutes ses compositions, une règle de travail
+                           dont elle ne s'écartoit jamais. Elle écrivoit d’un seul trait toute l’ébauche
+                           de l’ouvrage dont elle avoit conçu le plan, sans revenir sur ses pas, sans
+                           interrompre le cours de ses pensées, si ce n’est par les recherches que son
+                           sujet rendoit nécessaires. Cette première composition achevée,<persName
+                              ref="#stael"> madame de Staël</persName> la transcrivoit en entier
+                           de sa main, et sans s’occuper encore de la correction du style, elle modifioit
+                           l’expression de ses idées et les classoit souvent dans un ordre nouveau. Le
+                           second travail étoit ensuite mis au net par un secrétaire, et ce n’étoit que
+                           sur la copie, souvent même sur les épreuves imprimées, que <pb xml:id="v1pVI" n="vi"
+                              facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f16/full/1022,/0/native.jpg"/>
+                           <!-- on ne peut pas pour les éditeurs (donc entités nommées plurielles) renvoyer simultanément à deux noms différents : voir comment créer un autre type de lien vers l'index des noms-->
+                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
+                           <persName ref="#stael">madame de Staël</persName> perfectionnoit les détails
+                           de la diction&#xA0;: plus occupée de transmettre à ses lecteurs toutes <choice>
+                              <sic> la </sic>
+                              <corr>les</corr>
+                           </choice> nuances de sa pensée, toutes les émotions de son âme, que d’atteindre
+                           une correction minutieuse qu'on peut obtenir d’un travail, pour ainsi dire,
+                           mécanique. <lb/><persName ref="#stael">Madame de Staël</persName> avoit
+                           achevé, dès les premiers jours de 1816, la composition de l'ouvrage que nous
+                           publions. Elle avoit consacré une année à en revoir les deux premiers volumes,
+                           ainsi qu'une partie du troisième. Elle étoit revenue à <settlement
+                              ref="#paris">Paris</settlement> pour terminer les morceaux
+                           relatifs à des événemens récens dont elle n'avoit pas été témoin, et sur
+                           lesquels des renseignemens plus précis devoient modifier quelques-unes de ses
+                           opinions. Enfin les <persName ref="#considerationsSg">
+                              <title type="littWork" rend="italic"> Considérations sur les principaux
+                                 événemens de la révolution françoise</title></persName> (car tel est le titre
+                           que <persName ref="#stael">madame de Staël</persName> avoit elle-même choisi)
+                           auroient paru à la fin de l'année dernière, si celle qui faisoit notre gloire
+                           et notre bonheur nous eût été conservée. <lb/>
+                           <pb xml:id="v1pVII" n="vii" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f17/full/1044,/0/native.jpg"/>
+                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> Nous avons trouvé les deux premiers
+                           volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
+                           livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
+                           l’auteur. D’autres enfin n’étoient composés que de premier jet&#xA0;; et des notes
+                           marginales, écrites ou dictées par <persName ref="#stael">madame de
+                              Staël</persName>, indiquoient les points qu’elle se proposoit de développer.
+                           <lb/>Le premier sentiment comme le premier devoir de ses enfans, a été un
+                           respect religieux pour les moindres indications de sa pensée&#xA0;; et il est presque
+                           superflu de dire que nous ne nous sommes permis ni une addition ni même un
+                           changement, et que l’ouvrage qu’on va lire est parfaitement conforme au
+                           manuscrit de<persName ref="#stael"> madame de Staël</persName>. <lb/>Le
+                           travail des éditeurs s’est borné uniquement à la révision des épreuves, et à la
+                           correction de ces légères inexactitudes de style, qui échappent à la vue dans
+                           le manuscrit le plus soigné. Ce travail s’est fait sous les yeux de <pb xml:id="v1pVIII"
+                              n="viii" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f18/full/1022,/0/native.jpg"/>
+                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
+                           <persName ref="#schlegelW"> M. A. W. de Schlegel</persName>, dont la rare
+                           supériorité d'esprit et de savoir justifie la confiance avec laquelle <persName
+                              ref="#stael">madame de Staël</persName> le consultoit dans tous ses
+                           travaux littéraires, autant que son honorable caractère mérite l’estime et
+                           l’amitié qu’elle n’a pas cessé d’avoir pour lui pendant une liaison de treize
+                           années.<lb/><persName ref="#staelAu"> M. de Staël</persName> remplira des
+                           intentions qui doivent être sacrées pour lui, en publiant une édition complète
+                           des <title type="littWork" ref="#oeuvresCompletesSg"> œuvres
+                           </title> de <persName ref="#stael"> sa mere</persName>, et de <title
+                              type="littWork" ref="#oeuvresCompletesNj">celles</title> de
+                           <persName ref="#neckerJ"> M. Necker.</persName> Les œuvres de <persName
+                              ref="#stael"> madame de Staël</persName> renfermeront quelques
+                           compositions inédites; entre autres des fragmens d’un ouvrage commencé sous le
+                           titre de<title type="littWork" rend="italic" ref="#dixAnneesSg">
+                              Dix années d’exil</title>. L’une et l'autre collection sera précédée d’une
+                           notice biographique&#xA0;; mais un sentiment, que ceux qui ont connu <persName
+                              ref="#stael">madame de Staël</persName> apprécieront avec
+                           indulgence, n’a pas encore permis à ses enfans de se livrer à un travail qui
+                           touche de si près à leurs plus chers comme à leurs plus douloureux
+                           souvenirs.</seg></p>
+                  </div>
+                  <pb xml:id="v1pIX" n="ix" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f19/full/1044,/0/native.jpg"/>
+                  <div xml:id="prefaceAu" type="prefaceAu">
+                     <note resp="#tesserS">Cet &#8810; Avertissement de l'auteur &#8811; ne figure pas
+                        dans le manuscrit.
+                     </note>
+                     <milestone unit="section" type="collation" subtype="add" xml:id="PrefaceAuEd1"
+                        corresp="#PrefaceAuMs"/>
+                     <head type="prefaceAuthor" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
+                     <lb/>
+                     <lb/>
+                     <p><seg type="collation" subtype="add" xml:id="PrefaceAuEd"
+                        corresp="#PrefaceAuMs">
+                        <hi rend="bold">J’</hi><hi rend="small-caps">AVOIS</hi> d’abord commencé cet
+                        ouvrage avec l’intention de le borner à l’examen des actes et des écrits
+                        politiques de<persName ref="#neckerJ"> mon père.</persName> Mais, en avançant
+                        dans mon travail, j’ai été conduite par le sujet même à retracer, d’une part,
+                        les principaux événemens de la révolution françoise, et à présenter, de
+                        l’autre, le tableau de l’Angleterre, comme une justification de l’opinion de
+                        <persName ref="#neckerJ">M. Necker,</persName> relativement aux
+                        institutions politiques de ce pays. Mon plan s’étant agrandi, il m’a semblé que
+                        je devois changer de titre, quoique je n’eusse pas changé d’objet. Il restera
+                        néanmoins dans ce livre plus de détails relatifs à mon <pb xml:id="v1pX" n="x"
+                           facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f20/full/1022,/0/native.jpg"/>
+                        <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw><persName
+                           ref="#neckerJ">père,</persName> et même à <persName
+                              ref="#stael">moi,</persName> que je n’en aurois mis, si je l’eusse
+                        d’abord conçu sous un point de vue général&#xA0;; mais peut-être des circonstances
+                        particulières servent-elles à faire mieux connoÎtre l’esprit et le caractère
+                        des temps qu’on veut décrire.</seg>
+                     </p>
+                  </div>
+               </div>
+            </front>
+            <body>
+               <!-- on ne peut pas mettre un seul  <div type="volume" n="1"> incluant <front> et <body> : incompatible avec <titlePage>. Déplacé dans <body> -->
+             
+               <pb xml:id="v1p1" n="1" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f21/full/1026,/0/native.jpg"/>
+                  <head type="titleWork" rend="center">
+                     <seg type="collation" subtype="add" xml:id="titleWorkEd"
+                        corresp="#titleWorkMs"> CONSIDÉRATIONS <lb/>SUR <lb/>LES
+                        PRINCIPAUX ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE.</seg><lb/><lb/>
+                  </head>
+                  <fw type="frise" place="below">Frise</fw>
+                  <div xml:id="part1ed" type="part" n="1">
+                     <head type="titlePart" rend="center"> PREMIÈRE PARTIE.</head>
+                     <lb/>
+                     <lb/>
+                     <div xml:id="ch1ed" type="chapter" n="1">
+                        <head type="titleChapter" rend="center">
+                           <seg type="collation" subtype="subst" xml:id="Chap1Ed"
+                              corresp="#Chap1Ms">CHAPITRE PREMIER.</seg>
+                        </head>
+                        <lb/>
+                        <lb/>
+                        <head type="titleChapterMain" rend="center"><hi rend="italic">Réflexions
+                           générales.</hi></head>
+                        <lb/>
+                        <lb/>
+                        
+                        
+                        <p>
+                           <hi rend="bold">L</hi><hi rend="small-caps">A</hi> révolution de France est une
+                           des <milestone unit="absent" type="collation" subtype="absent" xml:id="PlusEd"
+                              corresp="#PlusMs"/> grandes époques de l’ordre social.
+                           Ceux qui la considèrent comme un événement accidentel, n’ont<seg
+                              type="collation" subtype="subst" xml:id="EtenduEd"
+                              corresp="#EtenduMs"> porté</seg> leurs regards ni dans le
+                           passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce&#xA0;; et, afin de
+                           satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les
+                           siècles avoient préparé. <milestone unit="section" type="collation" subtype="absent"
+                              xml:id="AdversairesEd" corresp="#AdversairesMs"/>
+                           <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises
+                           de l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
+                              type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
+                           <pb xml:id="v1p2" n="2" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f22/full/1034,/0/native.jpg"/>
+                           <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se
+                           rattachoient de quelque manière <seg type="collation" subtype="subst"
+                              xml:id="ProgresEd" corresp="#ProgresMs">au
+                              développement</seg> des idées ; et qu’après une lutte et des malheurs plus
+                           ou moins prolongés, le triomphe des lumières a toujours été favorable à la
+                           grandeur et à l’amélioration de l’espèce humaine. <lb/> Mon ambition seroit de
+                           parler du temps dans lequel nous avons vécu, comme s’il étoit déjà <milestone unit="absent"
+                              type="collation" subtype="absent" xml:id="BienEd"
+                              corresp="#BienMs"/> loin de nous. Les hommes éclairés,
+                           qui sont toujours contemporains des siècles futurs par leurs pensées, jugeront
+                           si j’ai su m’élever à la hauteur d’impartialité que je
+                           <!-- fin f. 3v du manuscrit --> voulois atteindre.<lb/>
+                           Je me bornerai, dans ce chapitre, à des considérations générales sur la marche
+                           politique de la civilisation européenne, mais seulement par rapport à la
+                           révolution de France&#xA0;: car c’est à ce sujet, déjà bien vaste, que cet ouvrage
+                           est consacré.<lb/> Les deux peuples anciens dont la littérature et l’histoire
+                           composent encore aujourd’hui notre principale fortune intellectuelle, n’ont dû
+                           leur étonnante supériorité qu’à la jouissance d’une patrie libre. Mais
+                           l’esclavage existoit chez eux&#xA0;; et, par conséquent, les droits et les motifs
+                           d’émulation, qui doivent être communs à tous les hommes, étoient le partage
+                           exclusif<pb xml:id="v1p3" n="3"/>
+                        </p>
+                     </div>
+                  </div>
+            </body>
+         </text>
+      
+    
+      
+  <!-- ############ Manuscript ##################### -->    
+         
+         
+         
+         <text xml:id="manuscrit" n="Considérations">
+      <body>
+         <div xml:id="v1ms" type="volume" n="1">
+
+            <pb xml:id="v1_f1r" n="1r" facs="../images/single/lettre_albertine_1.jpg"/>
+
+
+            <note resp="#tesserS">Cette lettre d'<persName ref="#staelA">Albertine de
+                  Staël</persName> a été reliée à ce manuscrit probablement après la publication de
+               l'ouvrage. Elle est adressée au peintre <persName ref="#gerardF"> François
+                  Gérard</persName> à qui elle l'a donné pour le remercier des portraits de sa <persName
+                     ref="#stael">mère</persName> et son frère <persName ref="#staelAu"
+                        > Auguste. </persName> En ce qui concerne le portrait de <persName ref="#stael"
+                  >Germaine de Staël,</persName> elle fait probablement allusion au tableau <title
+                  type="painting" ref="#corinneMisene" rend="italic">Corinne au Cap
+                     Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <persName
+                  ref="#lyon"> Lyon.</persName></note>
+
+            <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#frontispiceEd"
+               xml:id="frontispiceMs"/>
+
+            <fw type="bibl" place="bottom-left">Achat 22856 </fw>
+            <div xml:id="letterV1" type="letter" corresp="#staelA" >
+               <p xml:id="v1_letter"> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
+                  exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <del
+                     hand="#staelA" rend="strikethrough">
+                     <gap reason="illegible" atLeast="4" unit="char"/>
+                  </del>
+                  <add hand="#staelA" instant="true">vos</add> yeux. Ce manuscrit des <title
+                     type="littWork" rend="underlined" ref="#considerationsSg"
+                     >Considérations sur la révolution françoise</title> est une copie corrigée de
+                  la main de <persName ref="#stael">ma mère</persName> et de <persName
+                     ref="#staelAu">mon frere Auguste</persName>, je ne m’en serois pas
+                  séparée facilement pour toute autre personne mais il m’est doux de le mettre entre
+                  <pb xml:id="v1_f1v" n="1v" facs="../images/single/lettre_albertine_2.jpg"/> les mains de <persName
+                     ref="#gerardF">celui</persName> qui nous a procuré le bonheur de revoir
+                  leurs traits cheris. Je crois accomplir un devoir et c’est en même tems un plaisir
+                  de vous le remettre. </p>
+               <closer>
+                  <salute>Agreez je vous en prie l'expression de tous mes sentimens.</salute>
+                  <signed>
+                     <persName ref="#staelA"> Staël de Broglie</persName></signed>
+                  <dateline>le 19 avril</dateline>
+               </closer>
+
+
+
+            </div>
+
+            <pb xml:id="v1_f2r" n="2r" facs="../images/single/lettre_albertine_3.jpg"/>
+
+            <div xml:id="enveloppeV1" type="envelope" corresp="#staelA">
+               <!-- enveloppe reliée après la lettre -->
+               <p xml:id="v1_address">
+                  <address>
+                     <addrLine>Monsieur</addrLine>
+                     <lb/>
+                     <addrLine><persName ref="#gerardF">Monsieur <hi rend="capital"
+                           >G</hi>érard</persName>.</addrLine>
+                  </address>
+               </p>
+               <note resp="#tesserS"><p xml:id="v1_n001">Après l'&#8810;&#xA0;Avis des éditeurs&#xA0;&#8811; de la
+                  première édition figure un &#8810;&#xA0;Avertissement de l'auteur&#xA0;&#8811; qui
+                  n'a pas de trace dans le manuscrit. L'intention de <persName ref="#stael"
+                     >Staël</persName> était sans doute d'écrire une préface puisque un fragment
+                  autographe de celle-ci a été trouvé, tête-bêche, dans le dernier feuillet du
+                     <title type="littWork" rend="italic" ref="#mannequinSg"
+                     >Mannequin</title>, proverbe dramatique en deux actes écrit en 1811 et publié
+                  posthume dans les <title type="littWork" rend="italic"
+                     ref="#oeuvresCompletesSg">Oeuvres complètes</title>
+                  <!-- récupéer le texte sans modernisation --> de 1820. Voici le fragment décrit
+                  dans un catalogue de vente (Christie, 1998, p. 168)&#xA0;:</p> <p xml:id="v1_n002">
+                     &#8810;&#xA0;Préface. Il doit être de quelque intérêt pour l'Europe de
+                     connaître toutes les causes d'une Révolution qui non seulement a bouleversé la
+                     face des empires mais qui a peut-être opéré de plus grands changements dans les
+                     dispositions intérieures de la race humaine que dans sa destinée. Mon père
+                     s'étant trouvé ministre avant et pendant la Révolution, j'ai recueilli par son
+                     entretien et plus tard par mes propres circonstances des faits et des
+                     observations que je vais rassembler en les ralliant au premier objet de mes
+                     pensées&#xA0;: l'histoire de la vie de mon père. Je crois nécessaire de faire
+                     précéder ce récit par quelques réflexions sur l'état de la France pendant le
+                        XVIII<hi rend="superscript">e</hi> siècle. La Révolution française a été
+                     préparée si longtemps d'avance par la marche des opinions qu'on ne
+                     [...]&#xA0;&#8811;</p>
+               </note>
+
+               <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#PrefaceEdEd1"
+                  xml:id="PrefaceEdMs"/>
+               <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#PrefaceAuEd1"
+                  xml:id="PrefaceAuMs"/>
+            </div>
+
+
+            <pb xml:id="v1_f3r" n="3r" type="nBnF" facs="../images/single/manuscrit_vol1_3r.jpg"/>
+            <fw type="pageNum" place="top-left">1</fw>
+
+            <!-- afficher  volNum et cahNum? -->
+
+            <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
+                  Volume</del></fw>
+            <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
+                  Cahier</del></fw>
+
+            <note resp="#tesserS">Ce manuscrit n'a pas de titre mais, d'après la correspondance de
+                  <persName ref="#stael">Germaine de Staël</persName> et de son entourage, elle
+               avait probablement choisi celui de <title type="littWork" rend="italic">
+                   Considérations sur les principaux événemens de la Révolution françoise</title>,
+               comme il a été déclaré dans l'&#171;&#xA0;Avis des éditeurs&#xA0;&#187; de la
+               première édition. C'est d'ailleurs le titre qui figure dans le frontispice de la
+               publication. Dans des stades génétiques précédents elle avait déjà songé à un titre
+               ensuite raturé&#xA0;: <title type="littWork" ref="#staël" rend="italic"
+                  >Considérations sur les principaux faits de la révolution de France et sur les
+                  résultats de la révolution d'Angleterre</title> (Christie, 1998, p. 162).</note>
+
+            <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#titleWorkEd"
+               xml:id="titleWorkMs"/>
+
+
+            <fw type="bibl" place="bottom-left">Achat 22856</fw>
+            <fw type="bibl" place="top-center">N.a.fr. 14606 </fw>
+
+            <fw type="catch" place="bottom-right">-ment</fw>
+            <fw type="stamp" place="left-hand margin">Tampon de la Bibliothèque Nationale de
+               France</fw>
+            <div xml:id="part1ms" type="part" n="1">
+               <div xml:id="ch1ms" type="chapter" n="1">
+                  <head type="titlePart" rend="underlined"><add type="addition" hand="#unknown"
+                        >Première partie</add></head>
+                  <head type="titleChapter" subtype="nChapter">
+                     <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
+                     <milestone unit="section" type="collation" subtype="subst" corresp="stael_edition1.xml#Chap1Ed"
+                        xml:id="Chap1Ms"/>
+                     <handShift scribeRef="#randallF"/> 1<hi rend="superscript">er</hi>
+                     Chapitre.</head>
+                  <head type="titleChapter" subtype="main">Réflexions générales </head>
+                  <p xml:id="v1_p001" >La Révolution de France est une des <milestone unit="section" type="collation" subtype="add"
+                     xml:id="PlusMs" corresp="stael_edition1.xml#PlusEd"/>
+                     <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
+                     l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
+                        <milestone unit="section" type="collation" subtype="subst" xml:id="EtenduMs"
+                           corresp="stael_edition1.xml#EtenduEd"/> étendu leurs regards ni dans le
+                     passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et afin de
+                     satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les
+                     siècles avoient préparé. <milestone unit="section" type="collation" subtype="add"
+                        xml:id="AdversairesMs" corresp="stael_edition1.xml#AdversairesEd"/>
+                     <del hand="#unknown" rend="strikethrough"> Les adversaires des principes de la
+                        Révolution aimoient à se persuader que le choc auquel ils vouloient
+                        s'opposer étoit produit par quelques circonstances particulieres <choice>
+                           <orig>, i</orig>
+                           <reg>. I</reg>
+                        </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur
+                        l'enchaînement</del>
+                     <pb xml:id="v1_f3v" n="3v" facs="../images/single/manuscrit_vol1_3v.jpg>"/>
+                     <fw type="catch" place="bottom-right">je</fw>
+                     <fw type="pageNum" place="top-left">2</fw>
+                     <del hand="#unknown" rend="strikethrough">des faits, et sur la marche graduelle
+                        de la civilisation européenne. </del>
+                     <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
+                     de l'histoire pour se convaincre <choice>
+                        <orig>quelles</orig>
+                        <reg>qu'elles</reg>
+                     </choice> ont été toutes inévitables quand elles se rattachoient de quelque
+                     <!-- trait vertical dans la marge gauche en correspondance du texte suivant -->
+                     manière <metamark spanTo="#quApres" rend="verticalLine"
+                        place="left-hand margin"/>
+                     <milestone unit="section" type="collation" subtype="subst" xml:id="ProgresMs"
+                        corresp="stael_edition1.xml#ProgresEd" />
+                     <del hand="#schlegelW" rend="strikethrough">aux progrès </del>
+                     <add hand="#schlegelW">au developpement</add> des idées, et qu'après <milestone unit="section"
+                        type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins
+                     prolongés, le triomphe des lumières a toujours été favorable à la grandeur et à
+                     l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
+                     dans lequel nous avons vécu, comme s'il étoit déjà <milestone unit="section" type="collation"
+                        subtype="add" xml:id="BienMs" corresp="stael_edition1.xml#BienEd"/>
+                     <del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
+                     <add hand="#stael">bien loin de nous</add>. Les hommes éclairés qui sont
+                     toujours contemporains <del hand="#stael" rend="strikethrough">de
+                        l'avenir</del>
+                     <add hand="#stael">des siecles futurs</add> par leurs pensées, jugeront si j'ai
+                     su m'élever à la hauteur d'impartialité que je <pb xml:id="v1_f4r" n="4r"/>
+                  </p>
+               </div>
+
+            </div>
+         </div>
+      </body>
+         </text>
+      </group>
+   </text>
+
+</TEI>

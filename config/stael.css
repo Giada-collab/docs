@@ -1,0 +1,923 @@
+
+/* BASIC STRUCTURE ALL PAGES*/
+
+/* définition de l'élément root pour pouvoir appliquer les dimension relatives "rem" */
+html{
+    
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
+    font-size: 100%;
+    
+    
+    
+}
+
+body {
+    background-color: linen;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+   
+    text-align: justify;
+}
+
+header {
+    margin-bottom: 3.125rem;
+
+
+}
+
+
+.title_header {
+
+    font-size: 3vw; /* Responsive Font Size */
+    line-height: 1;
+    background-color: linen;
+    text-align: center;
+    display: block;
+    width: auto;
+
+}
+
+.title_header_sub {
+
+    font-size: 2vw; /* Responsive Font Size */
+    line-height: 2.5rem;
+
+
+
+}
+
+
+.title_header_sub2 {
+
+    font-size: 1.5vw; /* To allow users to resize the text (in the browser menu) */
+    line-height: 2rem;
+
+}
+
+
+
+
+.img_top {
+    float: left;
+    max-width: 20%; /* Responsive images will automatically adjust to fit the size of the screen */
+    height: auto;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* navigation bar */
+
+.background_nav {
+    background-color: white;
+    padding-left: 0.625rem;
+
+
+}
+
+.topnav a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7vw;
+
+    color: black;
+    float: none; /* W3C responsive layout*/
+    width: 100%; /* W3C responsive layout*/
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-decoration: none; /* no link underlined */
+
+}
+
+
+
+.topnav-right {
+    float: right;
+    background-color: #C0D1A9; /* Right-aligned section inside the top navigation */
+    color: white;
+    margin-right: 0rem;
+    margin-left: 0.0625rem;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    overflow: auto; /* W3C responsive layout*/
+    box-shadow: 0rem 0.625rem 1.125rem 0rem rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.5vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden; /* without this background-color of navigation bar disappear */
+
+}
+
+
+
+
+li {
+    float: left; /* text alignement in navigation bar */
+}
+
+
+.legende {
+
+    font-size: 0.7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-top: 3.125rem;
+    font-size: 1.3vw;
+
+
+}
+
+
+.footer a {
+
+    text-decoration: none;
+    color: black;
+    float: none; /* W3C responsive layout*/
+    width: 100%; /* W3C responsive layout*/
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+
+
+
+
+}
+
+
+/* CSS main content all pages */
+
+
+.main_content {
+
+    background-color: linen;
+    height: auto;
+    font-size: 1.6vw;
+    line-height: 2vw;
+
+
+}
+
+.title_page {
+
+    text-align: center; /* <h2> for each page */
+
+}
+
+
+
+
+h2 {
+    font-size: 2.3vw;
+
+}
+
+
+
+h3 {
+
+    font-size: 1.8vw;
+
+
+}
+
+
+h4 {
+    
+    font-size: 1.5vw;
+    
+    
+}
+
+.indent {
+
+    margin-left: 0.9375rem;
+
+}
+
+
+a:hover {
+    background-color: #D57B69;
+    color: black;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+cite {
+
+    font-style: italic;
+}
+
+.foreign_language {
+
+    font-style: italic;
+}
+
+
+
+
+/* HOME */
+
+
+/* Img home */
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 2.5rem;
+
+}
+
+.container img {
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+.container .content {
+    position: absolute;
+    top: 0rem;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.6 opacity */
+    color: #f1f1f1;
+    width: auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: 0.625rem;
+    font-size: 1.8vw;
+    line-height: 1.5;
+
+
+}
+
+/* PLAN DU SITE */
+
+
+.plan_site {
+
+    margin-left: 40%;
+    line-height: 2rem;
+
+
+}
+
+
+/* MANUSCRIT VOLUME I */
+
+
+.volume {
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 5.625rem;
+    width: 60%;
+    line-height: 150%;
+    margin: auto;
+  
+}
+
+
+
+
+.underlined {
+
+    text-decoration: underline;
+
+}
+
+
+
+.superscript {
+
+    vertical-align: super;
+    font-size: 1vw;
+
+}
+
+
+
+
+.finPage {
+
+    border-top: 0.0625rem dashed grey;
+
+}
+
+
+.folio {
+
+    font-size: 0.6rem;
+    font-style: italic;
+
+}
+
+
+
+
+/* CRITICAL APPARATUS */
+
+.addEditor {
+
+    font-size: 1.2vw;
+    font-style: italic;
+}
+
+
+
+.noteEditoriale {
+
+    width: 1.2rem;
+    height: auto;
+
+
+}
+
+
+/* del */
+
+.delStaelA {
+
+    text-decoration: line-through;
+    text-decoration-color: #6AB1AE;
+    text-decoration-thickness: 0.125rem;
+    display: inline;
+
+}
+
+.delStaelAu {
+
+    text-decoration: line-through;
+    text-decoration-color: #9DBD8F;
+    text-decoration-thickness: 0.125rem;
+    display: inline;
+
+}
+
+
+
+.delUnknown {
+
+    text-decoration: line-through;
+    text-decoration-color: grey;
+    text-decoration-thickness: 0.125rem;
+    display: inline;
+
+
+
+}
+
+
+.delSchlegelW {
+
+    text-decoration: line-through;
+    text-decoration-color: #0077b6;
+    text-decoration-thickness: 0.125rem;
+    display: inline;
+
+
+}
+
+
+.delStael {
+    text-decoration: line-through;
+    text-decoration-color: #D57B69;
+    text-decoration-thickness: 0.125rem;
+    display: inline;
+}
+
+
+
+.addCopiste {
+    font-weight: bold;
+    color: #F4CB73;
+
+
+
+}
+
+
+
+/* add */
+
+
+.addStaelA {
+
+    font-weight: bold;
+    color: #6AB1AE;
+
+}
+
+
+.addStaelAu {
+
+    font-weight: bold;
+    color: #9DBD8F;
+
+}
+
+
+.addUnknown {
+
+    font-weight: bold;
+
+    color: grey;
+    display: inline;
+
+
+}
+
+
+.addSchlegelW {
+
+    font-weight: bold;
+
+    color: #0077B6;
+    display: inline;
+}
+
+
+
+
+.addStael {
+
+    font-weight: bold;
+    color: #D57B69;
+    display: inline;
+}
+
+
+
+
+.addCopiste {
+    font-weight: bold;
+    color: #F4CB73;
+    display: inline;
+
+}
+
+
+.addition {
+
+    font-style: italic;
+
+
+}
+
+.crayon {
+    background-color: LightGray;
+
+}
+
+
+
+
+/* Section "Principes d'affichage" */
+
+#legende {
+
+    line-height: 1.3rem;
+    font-size: 1.6vw;
+}
+
+#abbreviations{
+    
+     line-height: 1.3rem;
+    font-size: 1.6vw;
+    
+}
+
+.book {
+
+    width: 1.2rem;
+    height: auto;
+    border-bottom: dotted;
+
+}
+
+
+.manuscrit {
+
+    width: 1.2rem;
+    height: auto;
+    border-bottom: dotted;
+
+}
+
+
+
+
+.quelles {
+
+    width: 3.3rem;
+    height: auto;
+
+}
+
+
+
+
+.celuiQui {
+
+    width: 4.3rem;
+    height: auto;
+
+}
+
+
+.corr {
+
+    width: 5rem;
+    height: auto;
+
+}
+
+
+
+.del {
+    text-decoration: line-through;
+}
+
+
+
+.subst {
+
+    font-weight: bold;
+
+}
+
+
+/* Page Documentation technique */
+
+
+.imgXml{
+    
+     width: 70%;
+    height: auto;
+
+    
+    
+    
+    
+}
+
+
+
+
+/* page introduction */
+
+
+
+.img_body {
+    max-width: 50%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+
+/* TOOLTIPS */
+
+/* tooltip editorial note */
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: dotted;
+
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 23rem;
+    font-size: smaller;
+    background-color: #FFFBE1;
+    border-style: outset;
+    text-align: justify;
+    padding: 1.1rem;
+    border-radius: 0.375rem;
+    top: -0.625rem;
+    left: 105%;
+    line-height: 1.1rem;
+
+
+    /* Position the tooltip text  */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+
+/*   tooltip normalisation */
+
+
+/* Tooltip container*/
+.tooltipReg {
+    position: relative;
+    display: inline-block;
+    border-bottom: dotted;
+
+}
+
+/* Tooltip text */
+.tooltipReg .tooltiptextReg {
+    visibility: hidden;
+    width: 7.5rem;
+    font-size: smaller;
+    background-color: #EABDB4;
+    text-align: center;
+    padding: 0.375rem 0;
+    border-radius: 0.375rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -3.75rem; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    /* Position the tooltip text  */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipReg:hover .tooltiptextReg {
+    visibility: visible;
+}
+/*  Array  */
+.tooltipReg .tooltiptextReg::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -0.3125rem;
+    border-width: 0.3125rem;
+    border-style: solid;
+    border-color: #EABDB4 transparent transparent transparent;
+}
+
+
+/* END TOOLTIPS */
+
+
+
+
+/* 1ST EDITION */
+
+
+.titlePage {
+
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 5.625rem;
+    width: 60%;
+    line-height: 150%;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.finPageEd {
+
+    font-size: 0.625rem;
+
+
+
+}
+
+
+
+.page {
+
+    font-size: 0.6rem;
+    font-style: italic;
+    background-color: white;
+    text-decoration: none;
+
+
+}
+
+/* Frontispice */
+
+.titlePartMain {
+
+
+    font-size: 2.3vw;
+
+}
+
+
+
+.byline {
+
+    font-size: 1.3vw;
+
+}
+
+
+
+.epigraph {
+
+    text-align: left; /* corriger */
+    font-size: 0.625rem;
+    line-height: 0.625rem; /* corriger */
+
+}
+
+
+h6 {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 1.8vw;
+    font-weight: normal;
+
+
+}
+
+h5 {
+
+    text-align: center;
+    font-size: 2vw;
+    font-weight: normal;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
+}
+
+
+mark.add {
+
+    background-color: #C8E6DB;
+
+}
+
+mark.subst {
+
+    background-color: #C3D5E3;
+
+}
+
+.letterStart {
+    
+    font-weight: bold;
+
+}
+
+.wordStart{
+    
+     font-variant: small-caps;
+     font-size: 1.2vw;
+    
+}
+
+/* TOOLTIPS 1ST EDITION */
+
+/* Tooltip container*/
+.tooltipCorr{
+    position: relative;
+    display: inline-block;
+    border-bottom: dotted;
+
+}
+
+/* Tooltip text */
+.tooltipCorr .tooltiptextCorr {
+    visibility: hidden;
+    width: 7.5rem;
+    font-size: smaller;
+    background-color: #D4C6A8;
+    text-align: center;
+    padding: 0.375rem 0;
+    border-radius: 0.375rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -3.75rem; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    /* Position the tooltip text  */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipCorr:hover .tooltiptextCorr {
+    visibility: visible;
+}
+/*  Array  */
+.tooltipCorr .tooltiptextCorr::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -0.3125rem;
+    border-width: 0.3125rem;
+    border-style: solid;
+    border-color: #D4C6A8 transparent transparent transparent;
+}
+
+blockquote {
+    
+    line-height: 1.1vw;
+    text-align: justify;
+    margin-left: 40%;
+    font-size: 1.1vw;
+    
+}
+
+/* Mentions légales */
+
+.CC-BY-NC{
+    
+     width: 7rem;
+    height: auto;
+    
+}
+
+
+/* page Manuscrit e page 1re édition */
+
+b.fiche{
+    
+    font-weight:bold;
+}
+
+.noteSmall{
+    
+    font-size:smaller;
+}
+
+
+
+button{
+    
+    background-color: #C0D1A9;
+    border: #C0D1A9;
+    font-size: 1.6vw;
+}
