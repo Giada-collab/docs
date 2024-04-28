@@ -2,8 +2,7 @@
 <?xml-model href="schema/tei_cp.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
 
-   <!-- dates standard ISO 8601  avec @when seulement -->
-   <!-- standard ISO ISO 639-1 for languages -->
+  
 
    <teiHeader>
       <fileDesc>
@@ -317,48 +316,7 @@
             </listPlace>
             
             
-            <!-- ########## Liste Ouvrages ########## -->     
-            
-            
-   <list>
-      <item xml:id="considerationsSg">
-             
-           <title  type="littWork" rend="italic"
-                     ref="https://www.wikidata.org/wiki/Q107179831" >
-               Considérations sur les
-               principaux événements de la Révolution française</title>
-                  <name type="author" ref="#stael">Germaine de Staël</name>
-      </item>
-      <item xml:id="corinneMisene">
-                  <title  type="painting" rend="italic"
-                     ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap
-                     Misène</title>
-                  <name type="author" ref="#gerardF">François Gérard</name>
-      </item>     
-               <item xml:id="dixAnneesSg">
-                  <title type="littWork" rend="italic">Dix années d'exil</title>
-                  <name type="author" ref="#stael">Germaine de Staël</name>
-               </item>
-               
-               
-               <item xml:id="oeuvresCompletesNj">
-                  <title type="littWork" rend="italic"
-                     ref="https://www.wikidata.org/wiki/Q116868867">Oeuvres complètes</title>
-                  <name type="author" ref="#stael">Jacques Necker</name>
-               </item>
-               <item xml:id="mannequinSg">
-                  <title type="littWork" rend="italic">Mannequin</title>
-                  <name type="author" ref="#stael">Germaine de Staël</name>
-               </item>
-               
-               
-               <item xml:id="oeuvresCompletesSg">
-                  <title type="littWork" rend="italic">Oeuvres complètes</title>
-                  <name type="author" ref="#stael">Germaine de Staël</name>
-               </item>
-        
-   </list>
-            
+          
             
             <biblStruct>
                <monogr>
@@ -416,37 +374,8 @@
 
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-            <p>Édition numérique du dernier manuscrit des <title type="littWork"
-                  >Considérations</title> et de la première édition posthume. Le projet vise à
-               restituer toutes les écritures qui figurent dans le manuscrit et à fournir des moyens
-               pour comparer celui-ci avec le texte de la première édition </p>
-         </projectDesc>
-         <editorialDecl>
-            <correction>
-               <p>Correction des fautes du copiste signalées dans les notes éditoriales</p>
-            </correction>
-            <normalization>
-               <p>Graphie du manuscrit original respectée sauf pour les accents, la ponctuation
-                  forte et les majuscules dans les cas d'ambiguïté sémantique. L'intervention est
-                  toujours signalée. Emploi uniformisé du soulignement pour les titres d'ouvrages et
-                  des bateaux. Foliotation correspondant à celle de la BnF. </p>
-            </normalization>
-         </editorialDecl>
-         <p xml:id="variantEncoding">location="internal" method="parallel segmentation (?)"</p>
-
-      </encodingDesc>
-      <profileDesc>
-         <textClass>
-            <keywords scheme="https://rameau.bnf.fr/">
-               <term>Révolution française</term>
-               <term>Napoléon I<hi rend="superscript">er</hi></term>
-            </keywords>
-         </textClass>
-
-
-      </profileDesc>
+      
+     
    </teiHeader>
    
       
@@ -467,8 +396,7 @@
                      d'<persName ref="#staelA">Albertine de Staël</persName> au peintre <persName
                         ref="#gerardF">Gérard</persName>. En revanche, le titre de ce frontispice
                      ne figure pas dans le manuscrit. </note>
-                  <milestone unit="section" type="collation" subtype="add" xml:id="frontispiceEd"
-                     corresp="#frontispiceMs"/>
+                 
                   <docTitle rend="center">
                      <lb/>
                      <lb/>
@@ -494,11 +422,7 @@
                   <lb/>
                   <lb/>
                   <titlePart type="sub" rend="center">TOME PREMIER. </titlePart>
-                  
-                  <fw type="frise" place="below">Frise</fw>
-                  <!-- vérifier - à transformer avec éléments dans <facsimile-->
-                  
-                  <fw type="stamp" place="below">Tampon "Bibliothèque Royale"</fw>
+             
                   
                   <lb/>
                   <lb/>
@@ -518,13 +442,7 @@
                <div xml:id="v1ed" type="volume" n="1">
                   <pb xml:id="v1pV" n="v" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f15/full/1026,/0/native.jpg"/>
                   <div xml:id="prefaceEd" type="prefaceEd">
-                     <note resp="#tesserS">L'&#8810;&#xA0;Avis des éditeurs&#xA0;&#8811;, qui a été ajouté
-                        à la première édition, représente une des rares sources sur la manière de
-                        travailler de <persName ref="#stael">Staël</persName> et sur l'état du dernier
-                        manuscrit des <persName ref="#considerationsSg"><title type="littWork"
-                           rend="italic">Considérations</title></persName>. </note>
-                     <milestone unit="section" type="collation" subtype="add" corresp="#PrefaceEdMs"
-                        xml:id="PrefaceEdEd1"/>
+                   
                      <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
                      <lb/>
                      <lb/>
@@ -547,7 +465,7 @@
                            sur la copie, souvent même sur les épreuves imprimées, que <pb xml:id="v1pVI" n="vi"
                               facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f16/full/1022,/0/native.jpg"/>
                            <!-- on ne peut pas pour les éditeurs (donc entités nommées plurielles) renvoyer simultanément à deux noms différents : voir comment créer un autre type de lien vers l'index des noms-->
-                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
+                            AVIS DES EDITEURS.
                            <persName ref="#stael">madame de Staël</persName> perfectionnoit les détails
                            de la diction&#xA0;: plus occupée de transmettre à ses lecteurs toutes <choice>
                               <sic> la </sic>
@@ -568,7 +486,7 @@
                            auroient paru à la fin de l'année dernière, si celle qui faisoit notre gloire
                            et notre bonheur nous eût été conservée. <lb/>
                            <pb xml:id="v1pVII" n="vii" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f17/full/1044,/0/native.jpg"/>
-                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> Nous avons trouvé les deux premiers
+                            Nous avons trouvé les deux premiers
                            volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
                            livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
                            l’auteur. D’autres enfin n’étoient composés que de premier jet&#xA0;; et des notes
@@ -583,7 +501,7 @@
                            correction de ces légères inexactitudes de style, qui échappent à la vue dans
                            le manuscrit le plus soigné. Ce travail s’est fait sous les yeux de <pb xml:id="v1pVIII"
                               n="viii" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f18/full/1022,/0/native.jpg"/>
-                           <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
+                           
                            <persName ref="#schlegelW"> M. A. W. de Schlegel</persName>, dont la rare
                            supériorité d'esprit et de savoir justifie la confiance avec laquelle <persName
                               ref="#stael">madame de Staël</persName> le consultoit dans tous ses
@@ -610,8 +528,7 @@
                      <note resp="#tesserS">Cet &#8810; Avertissement de l'auteur &#8811; ne figure pas
                         dans le manuscrit.
                      </note>
-                     <milestone unit="section" type="collation" subtype="add" xml:id="PrefaceAuEd1"
-                        corresp="#PrefaceAuMs"/>
+                  
                      <head type="prefaceAuthor" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
                      <lb/>
                      <lb/>
@@ -628,7 +545,7 @@
                         je devois changer de titre, quoique je n’eusse pas changé d’objet. Il restera
                         néanmoins dans ce livre plus de détails relatifs à mon <pb xml:id="v1pX" n="x"
                            facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f20/full/1022,/0/native.jpg"/>
-                        <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw><persName
+                       <persName
                            ref="#neckerJ">père,</persName> et même à <persName
                               ref="#stael">moi,</persName> que je n’en aurois mis, si je l’eusse
                         d’abord conçu sous un point de vue général&#xA0;; mais peut-être des circonstances
@@ -647,7 +564,7 @@
                         corresp="#titleWorkMs"> CONSIDÉRATIONS <lb/>SUR <lb/>LES
                         PRINCIPAUX ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE.</seg><lb/><lb/>
                   </head>
-                  <fw type="frise" place="below">Frise</fw>
+                 
                   <div xml:id="part1ed" type="part" n="1">
                      <head type="titlePart" rend="center"> PREMIÈRE PARTIE.</head>
                      <lb/>
@@ -667,28 +584,23 @@
                         
                         <p>
                            <hi rend="bold">L</hi><hi rend="small-caps">A</hi> révolution de France est une
-                           des <milestone unit="absent" type="collation" subtype="absent" xml:id="PlusEd"
-                              corresp="#PlusMs"/> grandes époques de l’ordre social.
+                           des  grandes époques de l’ordre social.
                            Ceux qui la considèrent comme un événement accidentel, n’ont<seg
                               type="collation" subtype="subst" xml:id="EtenduEd"
                               corresp="#EtenduMs"> porté</seg> leurs regards ni dans le
                            passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce&#xA0;; et, afin de
                            satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les
-                           siècles avoient préparé. <milestone unit="section" type="collation" subtype="absent"
-                              xml:id="AdversairesEd" corresp="#AdversairesMs"/>
+                           siècles avoient préparé. 
                            <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises
-                           de l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
-                              type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
+                           de l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<hi rend="small">TOME I</hi>
                            <pb xml:id="v1p2" n="2" facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f22/full/1034,/0/native.jpg"/>
-                           <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se
+                          quand elles se
                            rattachoient de quelque manière <seg type="collation" subtype="subst"
                               xml:id="ProgresEd" corresp="#ProgresMs">au
                               développement</seg> des idées ; et qu’après une lutte et des malheurs plus
                            ou moins prolongés, le triomphe des lumières a toujours été favorable à la
                            grandeur et à l’amélioration de l’espèce humaine. <lb/> Mon ambition seroit de
-                           parler du temps dans lequel nous avons vécu, comme s’il étoit déjà <milestone unit="absent"
-                              type="collation" subtype="absent" xml:id="BienEd"
-                              corresp="#BienMs"/> loin de nous. Les hommes éclairés,
+                           parler du temps dans lequel nous avons vécu, comme s’il étoit déjà  loin de nous. Les hommes éclairés,
                            qui sont toujours contemporains des siècles futurs par leurs pensées, jugeront
                            si j’ai su m’élever à la hauteur d’impartialité que je
                            <!-- fin f. 3v du manuscrit --> voulois atteindre.<lb/>
@@ -709,7 +621,7 @@
       
     
       
-  <!-- ############ Manuscript ##################### -->    
+  <!-- ############ Manuscrit ##################### -->    
          
          
          
@@ -731,10 +643,6 @@
                      Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <persName
                   ref="#lyon"> Lyon.</persName></note>
 
-            <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#frontispiceEd"
-               xml:id="frontispiceMs"/>
-
-            <fw type="bibl" place="bottom-left">Achat 22856 </fw>
             <div xml:id="letterV1" type="letter" corresp="#staelA" >
                <p xml:id="v1_letter"> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
                   exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <del
@@ -799,22 +707,13 @@
                      [...]&#xA0;&#8811;</p>
                </note>
 
-               <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#PrefaceEdEd1"
-                  xml:id="PrefaceEdMs"/>
-               <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#PrefaceAuEd1"
-                  xml:id="PrefaceAuMs"/>
             </div>
 
 
             <pb xml:id="v1_f3r" n="3r" type="nBnF" facs="../images/single/manuscrit_vol1_3r.jpg"/>
-            <fw type="pageNum" place="top-left">1</fw>
-
-            <!-- afficher  volNum et cahNum? -->
-
-            <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
-                  Volume</del></fw>
-            <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
-                  Cahier</del></fw>
+           
+          
+          
 
             <note resp="#tesserS">Ce manuscrit n'a pas de titre mais, d'après la correspondance de
                   <persName ref="#stael">Germaine de Staël</persName> et de son entourage, elle
@@ -827,37 +726,27 @@
                   >Considérations sur les principaux faits de la révolution de France et sur les
                   résultats de la révolution d'Angleterre</title> (Christie, 1998, p. 162).</note>
 
-            <milestone unit="absent" type="collation" subtype="absent" corresp="stael_edition1.xml#titleWorkEd"
-               xml:id="titleWorkMs"/>
+           
 
 
-            <fw type="bibl" place="bottom-left">Achat 22856</fw>
-            <fw type="bibl" place="top-center">N.a.fr. 14606 </fw>
-
-            <fw type="catch" place="bottom-right">-ment</fw>
-            <fw type="stamp" place="left-hand margin">Tampon de la Bibliothèque Nationale de
-               France</fw>
+         
             <div xml:id="part1ms" type="part" n="1">
                <div xml:id="ch1ms" type="chapter" n="1">
                   <head type="titlePart" rend="underlined"><add type="addition" hand="#unknown"
                         >Première partie</add></head>
                   <head type="titleChapter" subtype="nChapter">
                      <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
-                     <milestone unit="section" type="collation" subtype="subst" corresp="stael_edition1.xml#Chap1Ed"
-                        xml:id="Chap1Ms"/>
-                     <handShift scribeRef="#randallF"/> 1<hi rend="superscript">er</hi>
+                     
+                     1<hi rend="superscript">er</hi>
                      Chapitre.</head>
                   <head type="titleChapter" subtype="main">Réflexions générales </head>
-                  <p xml:id="v1_p001" >La Révolution de France est une des <milestone unit="section" type="collation" subtype="add"
-                     xml:id="PlusMs" corresp="stael_edition1.xml#PlusEd"/>
+                  <p xml:id="v1_p001" >La Révolution de France est une des 
                      <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
                      l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
-                        <milestone unit="section" type="collation" subtype="subst" xml:id="EtenduMs"
-                           corresp="stael_edition1.xml#EtenduEd"/> étendu leurs regards ni dans le
+                         étendu leurs regards ni dans le
                      passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et afin de
                      satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les
-                     siècles avoient préparé. <milestone unit="section" type="collation" subtype="add"
-                        xml:id="AdversairesMs" corresp="stael_edition1.xml#AdversairesEd"/>
+                     siècles avoient préparé.
                      <del hand="#unknown" rend="strikethrough"> Les adversaires des principes de la
                         Révolution aimoient à se persuader que le choc auquel ils vouloient
                         s'opposer étoit produit par quelques circonstances particulieres <choice>
@@ -866,8 +755,7 @@
                         </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur
                         l'enchaînement</del>
                      <pb xml:id="v1_f3v" n="3v" facs="../images/single/manuscrit_vol1_3v.jpg>"/>
-                     <fw type="catch" place="bottom-right">je</fw>
-                     <fw type="pageNum" place="top-left">2</fw>
+                   
                      <del hand="#unknown" rend="strikethrough">des faits, et sur la marche graduelle
                         de la civilisation européenne. </del>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
@@ -876,17 +764,13 @@
                         <reg>qu'elles</reg>
                      </choice> ont été toutes inévitables quand elles se rattachoient de quelque
                      <!-- trait vertical dans la marge gauche en correspondance du texte suivant -->
-                     manière <metamark spanTo="#quApres" rend="verticalLine"
-                        place="left-hand margin"/>
-                     <milestone unit="section" type="collation" subtype="subst" xml:id="ProgresMs"
-                        corresp="stael_edition1.xml#ProgresEd" />
+                     manière 
+                     
                      <del hand="#schlegelW" rend="strikethrough">aux progrès </del>
-                     <add hand="#schlegelW">au developpement</add> des idées, et qu'après <milestone unit="section"
-                        type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins
+                     <add hand="#schlegelW">au developpement</add> des idées, et qu'après  une lutte et des malheurs plus ou moins
                      prolongés, le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <milestone unit="section" type="collation"
-                        subtype="add" xml:id="BienMs" corresp="stael_edition1.xml#BienEd"/>
+                     dans lequel nous avons vécu, comme s'il étoit déjà 
                      <del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
                      <add hand="#stael">bien loin de nous</add>. Les hommes éclairés qui sont
                      toujours contemporains <del hand="#stael" rend="strikethrough">de
